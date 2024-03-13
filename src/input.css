@@ -1,0 +1,49 @@
+/* INPUT CSS = AN ORGANIZING TECHNIQUE USED BY TAILWIND */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* THIS GETS LOADED FIRST, RESETS ALL CSS AND KEEPS ALL STYLES CONSISTENT AMONG ALL BROWSERS */
+@tailwind base;
+/* THIS OVERRIDES THE BASE LAYER */
+@tailwind components;
+/* THEN THIS, WHICH MEANS THIS IS THE FINAL CSS CHANGES OR THE LAST ONE TO BE APPLIED TO THE WEBPAGE */
+/* ALSO CONTAINS ALL CUSTOM UTILITY CLASSES THAT ARE PROVIDED BY TAILWIND */
+/* OVERRIDES THE COMPONENTS LAYER */
+@tailwind utilities;
+
+/* targets a specific layer which can target styles for ex: the H1 of the base layer */
+@layer base {
+    html {
+        font-family: "Quicksand", sans-serif;
+    }
+    h1 {
+        @apply text-6xl;
+        font-weight: bold;
+    }
+    h2 {
+        @apply text-5xl;
+        font-weight: bold;
+    }
+    h3 {
+        @apply text-6xl;
+        font-weight: bold;
+    }
+    h4 {
+        @apply text-3xl;
+        font-weight: bold;
+    }
+    h5 {
+        @apply text-2xl;
+        font-weight: bold;
+    }
+    h6 {
+        @apply text-xl;
+        font-weight: bold;
+    }
+}
+
+@layer components {
+    .menu-item {
+        @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out
+    }
+}

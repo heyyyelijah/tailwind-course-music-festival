@@ -1,0 +1,40 @@
+npm run tw:build 
+    > runs tailwind similar to py manage.py runserver
+    > so it runs and builds the webpage while it's activated
+
+
+
+
+ml:auto
+    - shift object 
+
+
+VARIANTS
+    -    we can create our own variants / plugins
+    - then add them to tailwind.config.js plugins in order to register and use it
+
+
+ITEMS-CENTER + JUSTIFY CENTER
+    - ALIGN IN THE MIDDLE, VERTICALLY AND HORIZONTALLY
+
+
+FLEX:
+    - flex-row is the default direction of "flex"
+    - flex-col is to be used if items should be aligned vertically
+
+
+ADD IMAGE AS BG AS A CLASS
+    - class="bg-[url('./assets/images/her.jpg')]" 
+    // but this is not dynamic and can only be used if BG is alright to be fixed
+
+
+DYNAMIC BACKGROUND
+    - style="background-image: url('./assets/images/hero.jpg')"
+
+
+blurred background
+    - backdrop-blur-md
+
+
+flex-1:
+    - will grow to the max available widht of its container
